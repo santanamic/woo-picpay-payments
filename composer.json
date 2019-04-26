@@ -1,0 +1,33 @@
+{
+    "name": "santanamic/woocommerce-gateway-payments",
+    "version": "1.2.0",
+    "type": "wordpress-plugin",
+    "description": "Receba Pagamentos com PicPay no WooCommerce",
+    "keywords": [
+        "santanamic",
+        "Gateway",
+        "WooCommerce",
+        "Payments"
+    ],
+    "homepage": "https://github.com/santanamic/woocommerce-picpay-payments",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WILLIAN SANTANA",
+            "email": "williansantanamic@gmail.com",
+            "homepage": "https://github.com/santanamic",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.6",
+		"santanamic/php-picpay-sdk" : "1.0"
+    },
+    "autoload": {
+        "classmap": [ "includes" ]
+    },
+    "autoload-dev": {
+        "classmap": [ "tests" ]
+	}
+}
+
