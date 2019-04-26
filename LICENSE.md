@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 
-Copyright (c) 2019  <williansantana@sapo.pt>
+Copyright (c) 2019  <williansantanamic@gmail.com>
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
