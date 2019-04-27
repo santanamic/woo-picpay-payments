@@ -76,7 +76,7 @@ class WC_Gateway extends \WC_Payment_Gateway
           $this->enabled = $this->get_option( 'enabled' );
           $this->picpay_token = $this->get_option( 'x-picpay-token' );
           $this->saller_token = $this->get_option( 'x-seller-token' );
-		  $this->debug = $this->get_option('debug');
+		  $this->debug = $this->get_option('debug'); 
 		  
           /**
           *
