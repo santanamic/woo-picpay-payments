@@ -114,7 +114,7 @@ class WC_Validation_Builder
      */
 
 	public static function is_empty_credentials() {
-        return WC_Helper::plugin_settings( 'gateway_token' ) == '' ||  WC_Helper::plugin_settings('user_token') == '';
+        return WC_Helper::plugin_settings( 'x-picpay-token' ) == '' ||  WC_Helper::plugin_settings('x-seller-token') == '';
     } 
 
     /**
