@@ -170,7 +170,7 @@ class WC_API
          */ 
 		 
 		 return \PicPay\Configuration::getDefaultConfiguration()
-			->setApiKey( 'x-picpay-token', $this->get_gateway_settings('gateway_token') );
+			->setApiKey( 'x-picpay-token', $this->get_gateway_settings('x-picpay-token') );
     }
 	
     /**
