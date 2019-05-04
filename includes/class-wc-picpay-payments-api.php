@@ -208,7 +208,7 @@ class WC_API
              *
              */
             
-             return new \GuzzleHttp\Client([
+             return new \_PA88H63MC84HH6TR4VD\GuzzleHttp\Client([
 							'verify'  => false,
 							'headers' => [
 								'Content-Type'    => 'application/javascript; charset=UTF-8',
