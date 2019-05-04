@@ -198,7 +198,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 		 *
 		 */ 
 
-        $url = $order->get_meta('Gateway_Payment_URL');
+        $url = $order->get_meta('PicPayGateway_Payment_URL');
 
 		/**
 		 *
@@ -453,7 +453,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 				*/
 
 				$this->log
-					->add( sprintf(__('Gateway recebeu notificação de URL: %s', 'woocommerce-picpay-payments'), var_export($payment, true)) );
+					->add( sprintf(__('PicPay Gateway recebeu uma notificação de URL: %s', 'woocommerce-picpay-payments'), var_export($payment, true)) );
 
 			   /**
 				*
@@ -501,7 +501,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 					*
 					*/
 					
-					$order->add_meta_data( 'Gateway_authorizationId_' . $payment['status'] , $payment['authorizationId'], true );
+					$order->add_meta_data( 'PicPayGateway_authorizationId_' . $payment['status'] , $payment['authorizationId'], true );
 					
 				   /**
 					*
@@ -535,7 +535,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 					*/
 
 					$this->log
-						->add( sprintf(__('Gateway recebeu notificação de URL, mas o corpo da mensagem é invalido : %s', 'woocommerce-picpay-payments'), var_export($payment, true)) );
+						->add( sprintf(__('PicPay Gateway recebeu uma notificação de URL, mas o corpo da mensagem é invalido : %s', 'woocommerce-picpay-payments'), var_export($payment, true)) );
 				}
 			}
 		}
@@ -820,7 +820,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 				 *
 				 */
 				 
-				$order->add_meta_data( 'Gateway_cancellationId', $response['body']['cancellationId'], true );
+				$order->add_meta_data( 'PicPayGateway_cancellationId', $response['body']['cancellationId'], true );
 				
 				/**
 				 *
