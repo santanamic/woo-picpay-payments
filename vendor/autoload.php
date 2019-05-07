@@ -1,5 +1,4 @@
 <?php 
-
 spl_autoload_register(function ($class) { 
 $map = array (
   'PicPayGateway\\WC_API' => '/includes/class-wc-picpay-payments-api.php',
