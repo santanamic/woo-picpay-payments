@@ -135,7 +135,7 @@ class WC_Gateway extends \WC_Payment_Gateway
                   'title'       => __( 'Title', 'woocommerce-picpay-payments' ),
                   'type'        => 'text',
                   'description' => __( 'Isso controla o título que o usuário vê durante o checkout.', 'woocommerce-picpay-payments' ),
-                  'default'     => 'Simple Redirect',
+                  'default'     => 'PicPay',
                   'desc_tip'    => true,
               ),
               'description' => array(
