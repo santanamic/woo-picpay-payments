@@ -52,11 +52,27 @@ class WC_Helper
 
         /**
          *
-         * Add link shortcut to page plugins
+         * Add link shortcut config to page plugins
          *
          */ 
         
         $links[] = '<a href="' . esc_url(admin_url('admin.php?page=wc-settings&tab=checkout&section=woocommerce-picpay-payments')) . '">' . __('Configurações', 'woocommerce-picpay-payments') . '</a>';
+        
+        /**
+         *
+         * Add link shortcut support to page plugins
+         *
+         */ 
+        
+        $links[] = '<a href="http://bit.ly/picpay-support-gateway">' . __('Suporte', 'woocommerce-picpay-payments') . '</a>';
+
+        /**
+         *
+         * Add link shortcut docs to page plugins
+         *
+         */ 
+        
+        $links[] = '<a href="http://bit.ly/picpay-gateway-docs">' . __('Documentação', 'woocommerce-picpay-payments') . '</a>';
         
         /**
          *
