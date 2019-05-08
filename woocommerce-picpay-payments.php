@@ -8,7 +8,7 @@
  * Author: WILLIAN SANTANA
  * Author URI: https://github.com/santanamic
  * Version: 1.2.0
- * License: MIT
+ * License: GPLv2
  * Tested up to: 5.1.1
  * WC requires at least: 3.0
  * WC tested up to: 3.5
