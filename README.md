@@ -13,8 +13,8 @@
   <a href="#"><img src="https://img.shields.io/badge/license-GPLv2-brightgreen.svg?style=flat-square"></a>
   <a href="#"><img src="https://img.shields.io/appveyor/ci/gruntjs/grunt.svg"></a>
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SFLXNSMJU6S6G&source=url"><img src="https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square"></a>
-  <a href="#"><img src="https://img.shields.io/badge/plugin-1.2.0-orange.svg"></a>
-  <a href="#"><img src="https://img.shields.io/badge/WordPress-%3E%3D%204.6-blue.svg"></a>
+  <a href="#"><img src="https://img.shields.io/badge/version-1.2.0-orange.svg"></a>
+  <a href="#"><img src="https://img.shields.io/badge/wordpress-%3E%3D%204.6-blue.svg"></a>
 </p>
 
 
