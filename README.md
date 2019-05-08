@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://docsify.js.org">
-    <img style="max-width:300px; padding:40px 0" alt="docsify" src="https://santanamic.github.io/woocommerce-picpay-payments/_media/logo.svg">
+  <a href="#">
+    <img width="300" alt="PicPay WooCommerce" src="https://santanamic.github.io/woocommerce-picpay-payments/_media/logo.svg">
   </a>
 </p>
 
@@ -9,12 +9,12 @@
 </p>
 
 <p align="center">
-  <a href="#"><img alt="Backers on Open Collective" src="https://img.shields.io/badge/php->=5.6-8892BF.svg"></a>
-  <a href="#"><img alt="Sponsors on Open Collective" src="https://img.shields.io/badge/license-GPLv2-brightgreen.svg?style=flat-square"></a>
-  <a href="#"><img alt="Travis Status" src="https://img.shields.io/appveyor/ci/gruntjs/grunt.svg"></a>
-  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SFLXNSMJU6S6G&source=url"><img alt="donate" src="https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square"></a>
-  <a href="#"><img alt="npm" src="https://img.shields.io/badge/plugin-1.2.0-orange.svg"></a>
-  <a href="#"><img alt="gitter" src="https://img.shields.io/badge/WordPress-%3E%3D%204.6-blue.svg"></a>
+  <a href="#"><img src="https://img.shields.io/badge/php->=5.6-8892BF.svg"></a>
+  <a href="#"><img src="https://img.shields.io/badge/license-GPLv2-brightgreen.svg?style=flat-square"></a>
+  <a href="#"><img src="https://img.shields.io/appveyor/ci/gruntjs/grunt.svg"></a>
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SFLXNSMJU6S6G&source=url"><img src="https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square"></a>
+  <a href="#"><img src="https://img.shields.io/badge/plugin-1.2.0-orange.svg"></a>
+  <a href="#"><img src="https://img.shields.io/badge/WordPress-%3E%3D%204.6-blue.svg"></a>
 </p>
 
 
