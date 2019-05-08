@@ -1,113 +1,68 @@
-=== WooCommerce Stripe Payment Gateway ===
-Contributors: automattic, royho, akeda, mattyza, bor0, woothemes
-Tags: credit card, stripe, apple pay, payment request, google pay, sepa, sofort, bancontact, alipay, giropay, ideal, p24, woocommerce, automattic
-Requires at least: 4.4
-Tested up to: 5.1
+=== WooCommerce Picpay Pagamentos ===
+Contributors: williansantana
+Tags: credit card, picpay, pagamento
+Requires at least: 1.2.0
+Tested up to: 5.1.1
 Requires PHP: 5.6
-Stable tag: 4.1.16
-License: GPLv3
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
-Attributions: thorsten-stripe
+License: MIT
+License URI: https://opensource.org/licenses/MIT
 
-Take credit card payments on your store using Stripe.
+Receba Pagamentos com PicPay no WooCommerce
 
 == Description ==
 
-Accept Visa, MasterCard, American Express, Discover, JCB, Diners Club, SEPA, Sofort, iDeal, Giropay, Alipay and more directly on your store with the Stripe payment gateway for WooCommerce, including Apple Pay for mobile and desktop.
+WooCommerce PicPay Pagamentos permite que sua loja aceite pagamentos via PicPay. Os usuários são redirecionados para o site do PicPay onde podem concluir o pagamento usando seus smartphones.
 
-= Take Credit card payments easily and directly on your store =
+= Aceite pagamentos com cartão de crédito de forma fácil e direta na sua loja =
 
-The Stripe plugin extends WooCommerce allowing you to take payments directly on your store via Stripe’s API.
+Vantagens PicPay:
 
-Stripe is available in:
+* Seu cliente te paga em até 12x no cartão.
+* Você recebe o valor instantaneamente.
+* Simples até na cobrança.
+* [veja mais](https://www.picpay.com)
 
-* United States
-* Canada
-* UK
-* Australia
-* Belgium
-* France
-* Germany
-* Ireland
-* The Netherlands
-* [and more](https://support.stripe.com/questions/what-countries-does-stripe-support)
+PicPay é uma maneira simples e nova de aceitar pagamentos online. Com o PicPay, você pode aceitar cartões Visa, MasterCard, American Express, Discover, JCB e Diners Club, diretamente em sua loja.
 
-Stripe is a simple way to accept payments online. With Stripe you can accept Visa, MasterCard, American Express, Discover, JCB, and Diners Club cards, even Bitcoin, directly on your store.
+= Por que escolher o PicPay? =
 
-= Why choose Stripe? =
+O PicPay não tem taxas de configuração, sem taxas mensais, sem custos ocultos: você só é cobrado quando ganha dinheiro! Os ganhos são transferidos para sua conta bancária.
 
-Stripe has no setup fees, no monthly fees, no hidden costs: you only get charged when you earn money! Earnings are transferred to your bank account on a 7-day rolling basis.
-
-Stripe also supports the [Subscriptions extension](https://woocommerce.com/products/woocommerce-subscriptions/) and re-using cards. When a customer pays, they are set up in Stripe as a customer. If they create another order, they can check out using the same card. A massive timesaver for returning customers.
-
-= Apple Pay Support =
-
-WooCommerce Stripe now includes [Apple Pay](https://stripe.com/apple-pay) support, which means customers can pay using payment details associated to their Apple ID. Checkout is now just a thumbprint away. on both mobile and desktop. Only supports simple and variable products for now. More support to come.
-
-= Web Payments API Support =
-
-WooCommerce Stripe now includes [Web Payments API](https://www.w3.org/TR/payment-request/) support, which means customers can pay using payment details associated to their mobile devices, in browsers supporting the Web Payments API (Chrome for Android, amongst others). Checkout is now just a few taps away. on mobile. Only supports simple and variable products for now. More support to come.
 
 == Installation ==
 
-Please note, v4 of this gateway requires WooCommerce 2.6 and above.
+1. Acesse o painel de administrador do WordPress.
+2. Na barra lateral direita, vá para: Plugins > Adicionar novo.
+3. No campo de buscas entre com "WooCommerce PicPay Pagamentos". 
+4. Selecione nosso plugin na lista e clique em "Instalar agora".
+5. Por fim, clique no botão "Ativar" após a instalação.
 
-You can download an [older version of this gateway for older versions of WooCommerce from here](https://wordpress.org/plugins/woocommerce-gateway-stripe/developers/).
+= Manual Installation =
 
-= Automatic installation =
+O método de instalação manual envolve o download do nosso plugin e o seu upload para o seu servidor web através do seu aplicativo FTP favorito. O codex do WordPress contém [instruções sobre como fazer isso aqui](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
 
-Automatic installation is the easiest option as WordPress handles the file transfers itself and you don’t need to leave your web browser. To
-do an automatic install of, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
+== Requirements ==
 
-In the search field type “WooCommerce Stripe Payment Gateway” and click Search Plugins. Once you’ve found our plugin you can view details about it such as the point release, rating and description. Most importantly of course, you can install it by simply clicking "Install Now".
-
-= Manual installation =
-
-The manual installation method involves downloading our plugin and uploading it to your web server via your favorite FTP application. The WordPress codex contains [instructions on how to do this here](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
-
-= Updating =
-
-Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
+- Uma conta PicPay e-commerce
+- Credenciais de acesso para API. [Clique aqui para obter.](https://lojista.picpay.com/dashboard/ecommerce-token "Credenciais PicPay")
+- Plugin "WooCommerce" ativado e instalado.
+- Plugin "WooCommerce Extra Checkout Fields for Brazil" ativado e instalado.
+- Versão mínima do PHP  5.6
 
 == Frequently Asked Questions ==
 
-= Does this support recurring payments, like for subscriptions? =
+= Isso suporta pagamentos recorrentes, como para assinaturas? =
 
-Yes!
+Ainda não!
 
-= Does this require an SSL certificate? =
+= Isso exige um certificado SSL? =
 
-Yes! In live mode, an SSL certificate must be installed on your site to use Stripe. In addition to SSL encryption, Stripe provides an extra JavaScript method to secure card data.
+Não!
 
-= Does this support both production mode and sandbox mode for testing? =
+= Onde posso encontrar documentação? =
 
-Yes it does - production and sandbox mode is driven by the API keys you use.
+Para obter ajuda na configuração, consulte nosso [guia do usuário] (https://santanamic.github.io/woocommerce-picpay-payments/)
 
-= Where can I find documentation? =
+= Onde posso obter suporte ou conversar com outros usuários? =
 
-For help setting up and configuring, please refer to our [user guide](https://docs.woocommerce.com/document/stripe/)
-
-= Where can I get support or talk to other users? =
-
-If you get stuck, you can ask for help in the Plugin Forum.
-
-== Screenshots ==
-
-1. The settings panel used to configure the gateway.
-2. Normal checkout with Stripe.
-3. Option to save a card to your account.
-4. Checking out with a saved card.
-5. Using the Stripe checkout modal.
-
-== Changelog ==
-
-= 4.1.16 - 2019-04-18 =
-* Deprecate - Warn about the future removal of the Modal Checkout option.
-* Tweak - WC 3.6 compatibility.
-
-[See changelog for all versions](https://raw.githubusercontent.com/woothemes/woocommerce-gateway-stripe/master/changelog.txt).
-
-== Upgrade Notice ==
-
-= 4.1 =
-4.1 is a minor release. Please do a full site backup and test on a staging site before deploying to a live/production server.
+Se você tiver problemas, pode pedir ajuda no fórum de plugins.
