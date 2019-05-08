@@ -58,7 +58,7 @@ class WC_Gateway extends \WC_Payment_Gateway
           $this->id = 'woocommerce-picpay-payments';
           $this->icon = WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL . 'public/assets/img/icon.svg';
           $this->has_fields = false;
-          $this->method_title = __( 'PicPay Pagamentos', 'woocommerce-picpay-payments' );
+          $this->method_title = __('PicPay Pagamentos', 'woocommerce-picpay-payments');
           $this->method_description =  __( 'Para utilizar este meio de pagamento você precisa das credenciais de acesso fornceias pelo PicPay. <br> <a href="https://lojista.picpay.com/dashboard/ecommerce-token">Crie ou entre na sua conta PicPay para conseguirás!</a>', 'woocommerce-picpay-payments' );
           
           $this->init_form_fields();
@@ -560,7 +560,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 		 */
 
 		$this->log
-			->add( sprintf(__('Obtendo o status da order: %s', 'woocommerce-picpay-payments'), $order_id) );
+			->add( sprintf(__('Obtendo o status da ordem: %s', 'woocommerce-picpay-payments'), $order_id) );
 
         /**
 		 *
@@ -749,7 +749,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 		 */
 
 		$this->log
-			->add( sprintf(__('Alterção de status da order: %s', 'woocommerce-picpay-payments'), var_export($payment, true)) );
+			->add( sprintf(__('Alteração de status da order: %s', 'woocommerce-picpay-payments'), var_export($payment, true)) );
 	}
 	
     /**

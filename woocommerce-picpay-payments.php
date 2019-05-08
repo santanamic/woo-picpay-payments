@@ -13,6 +13,7 @@
  * WC requires at least: 3.0
  * WC tested up to: 3.5
  * Domain Path: /languages
+ * Text Domain: woocommerce-picpay-payments
  *
  * This file is part of <santanamic/woocommerce-picpay-payments>
  * Created by WILLIAN SANTANA <https://github.com/santanamic>
