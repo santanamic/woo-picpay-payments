@@ -2,7 +2,7 @@
 Contributors: williansantana
 Tags: credit card, picpay, pagamento
 Requires at least: 1.2.0
-Tested up to: 5.1.1
+Tested up to: 5.1.1 
 Requires PHP: 5.6
 License: MIT
 License URI: https://opensource.org/licenses/MIT
