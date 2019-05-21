@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img width="300" alt="PicPay WooCommerce" src="https://santanamic.github.io/woocommerce-picpay-payments/_media/logo.svg">
+    <img width="300" alt="PicPay WooCommerce" src="https://santanamic.github.io/woo-picpay-payments/_media/logo.svg">
   </a>
 </p>
 
@@ -20,12 +20,14 @@
 
 WooCommerce PicPay Pagamentos permite que sua loja aceite pagamentos via PicPay. Os usuários são redirecionados para o site do PicPay onde podem concluir o pagamento usando seus smartphones. 
 
+[Acesse a documentação para mais informações](https://santanamic.github.io/woo-picpay-payments)
+
 ## Links
 
-- [Ponto de partida](https://santanamic.github.io/woocommerce-picpay-payments/#/README)
-- [Obtendo credenciais](https://santanamic.github.io/woocommerce-picpay-payments/#/credentials)
-- [Processo de compra](https://santanamic.github.io/woocommerce-picpay-payments/#/process)
-- [Perguntas Frequentes](https://santanamic.github.io/woocommerce-picpay-payments/#/faq)
+- [Ponto de partida](https://santanamic.github.io/woo-picpay-payments/#/README)
+- [Obtendo credenciais](https://santanamic.github.io/woo-picpay-payments/#/credentials)
+- [Processo de compra](https://santanamic.github.io/woo-picpay-payments/#/process)
+- [Perguntas Frequentes](https://santanamic.github.io/woo-picpay-payments/#/faq)
  
 ## Instalação
 
