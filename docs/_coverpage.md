@@ -2,7 +2,7 @@
 
 > Receba Pagamentos com PicPay no WooCommerce.
 
-[GitHub](https://github.com/santanamic/woocommerce-picpay-payments/)
-
+[Started](#/README?id=instala%C3%A7%C3%A3o)
+[GitHub](https://github.com/santanamic/woo-picpay-payments/)
 
 ![color](#f0f0f0)
