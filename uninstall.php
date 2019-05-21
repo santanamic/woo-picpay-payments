@@ -2,7 +2,7 @@
 
 /**
  *
- * This file is part of <santanamic/woocommerce-picpay-payments>
+ * This file is part of <santanamic/woo-picpay-payments>
  * Created by WILLIAN SANTANA <https://github.com/santanamic>
  *
  * For the information of copyright and license you should read the file
@@ -14,7 +14,7 @@
  * Para obtener la información de los derechos de autor y la licencia debe leer
  * el archivo LICENSE que se distribuye con el código fuente.
  *
- * @package woocommerce-picpay-payments
+ * @package woo-picpay-payments
  * @author @santanamic
  *
  */
@@ -41,5 +41,5 @@ if ( defined( 'WC_REMOVE_ALL_DATA' ) && true === WC_REMOVE_ALL_DATA ) {
      *
      */ 
 	 
-	delete_option( 'woocommerce_woocommerce-picpay-payments_settings' );
+	delete_option( 'woocommerce_woo-picpay-payments_settings' );
 }

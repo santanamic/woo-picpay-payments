@@ -6,7 +6,7 @@ namespace PicPayGateway;
  *
  * WC_Notices_Builder Class
  *
- * This file is part of <santanamic/woocommerce-picpay-payments>
+ * This file is part of <santanamic/woo-picpay-payments>
  * Created by WILLIAN SANTANA <https://github.com/santanamic>
  *
  * For the information of copyright and license you should read the file
@@ -18,7 +18,7 @@ namespace PicPayGateway;
  * Para obtener la información de los derechos de autor y la licencia debe leer
  * el archivo LICENSE que se distribuye con el código fuente.
  *
- * @package woocommerce-picpay-payments
+ * @package woo-picpay-payments
  * @author @santanamic
  *
  */
@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  *
  * @category Class
  * @version  1.0.0
- * @package  woocommerce-picpay-payments
+ * @package  woo-picpay-payments
  *
 */
 
@@ -77,7 +77,7 @@ class WC_Notices_Builder
 		 *
 		 */ 
 
-          return self::notice_format( __('Para o plugin <strong>PicPay Pagamentos</strong> funcionar você precisa da versão 5.6.0 ou superior do <strong>PHP</strong>. Entre em contato com seu host.', 'woocommerce-picpay-payments'), 'error' );
+          return self::notice_format( __('Para o plugin <strong>PicPay Pagamentos</strong> funcionar você precisa da versão 5.6.0 ou superior do <strong>PHP</strong>. Entre em contato com seu host.', 'woo-picpay-payments'), 'error' );
     }
 	
     /**
@@ -97,7 +97,7 @@ class WC_Notices_Builder
 		 *
 		 */ 
 
-          return self::notice_format( __('Para o plugin <strong>PicPay Pagamentos</strong> funcionar você precisa da versão 3.0.0 ou superior do <strong>WooCommerce</strong>.', 'woocommerce-picpay-payments'), 'error' );
+          return self::notice_format( __('Para o plugin <strong>PicPay Pagamentos</strong> funcionar você precisa da versão 3.0.0 ou superior do <strong>WooCommerce</strong>.', 'woo-picpay-payments'), 'error' );
     }
 	
     /**
@@ -117,7 +117,7 @@ class WC_Notices_Builder
 		 *
 		 */ 
 
-          return self::notice_format( __('Para o plugin <strong>PicPay Pagamentos</strong> funcionar você precisa dos plugin(s) <a href="plugin-install.php?tab=plugin-information&plugin=woocommerce" data-fancybox data-type="iframe">WooCommerce</a> e <a href="plugin-install.php?tab=plugin-information&plugin=woocommerce-extra-checkout-fields-for-brazil" data-fancybox data-type="iframe"> WooCommerce Extra Checkout Fields for Brazil</a> ativados.', 'woocommerce-picpay-payments'), 'error' );
+          return self::notice_format( __('Para o plugin <strong>PicPay Pagamentos</strong> funcionar você precisa dos plugin(s) <a href="plugin-install.php?tab=plugin-information&plugin=woocommerce" data-fancybox data-type="iframe">WooCommerce</a> e <a href="plugin-install.php?tab=plugin-information&plugin=woocommerce-extra-checkout-fields-for-brazil" data-fancybox data-type="iframe"> WooCommerce Extra Checkout Fields for Brazil</a> ativados.', 'woo-picpay-payments'), 'error' );
     }
 
     /**
@@ -137,7 +137,7 @@ class WC_Notices_Builder
 		 *
 		 */ 
 
-          return self::notice_format( __('Para receber pagamentos com o <strong>PicPay</strong> você precisa habilitar a Moeda <a href="admin.php?page=wc-settings&tab=general#pricing_options-description">Real brasileiro (R$) no WooCommerce.</a>', 'woocommerce-picpay-payments'), 'error');
+          return self::notice_format( __('Para receber pagamentos com o <strong>PicPay</strong> você precisa habilitar a Moeda <a href="admin.php?page=wc-settings&tab=general#pricing_options-description">Real brasileiro (R$) no WooCommerce.</a>', 'woo-picpay-payments'), 'error');
     }
 	
     /**
@@ -157,7 +157,7 @@ class WC_Notices_Builder
 		 *
 		 */ 
 
-          return self::notice_format( __('Para receber pagamentos com o <strong>PicPay</strong> certifiquese de inserir as credenciais de acesso no menu de <a href="admin.php?page=wc-settings&tab=checkout&section=woocommerce-picpay-payments">opções.</a>', 'woocommerce-picpay-payments'), 'error');
+          return self::notice_format( __('Para receber pagamentos com o <strong>PicPay</strong> certifiquese de inserir as credenciais de acesso no menu de <a href="admin.php?page=wc-settings&tab=checkout&section=woo-picpay-payments">opções.</a>', 'woo-picpay-payments'), 'error');
     }
 
     /**
@@ -177,7 +177,7 @@ class WC_Notices_Builder
 		 *
 		 */ 
 
-          return self::notice_format( __('Obrigado por baixar o plugin <strong>PicPay Pagamentos</strong> para ativá-lo acesse o menu de <a href="admin.php?page=wc-settings&tab=checkout&section=woocommerce-picpay-payments">opções</a>.', 'woocommerce-picpay-payments'), 'info');
+          return self::notice_format( __('Obrigado por baixar o plugin <strong>PicPay Pagamentos</strong> para ativá-lo acesse o menu de <a href="admin.php?page=wc-settings&tab=checkout&section=woo-picpay-payments">opções</a>.', 'woo-picpay-payments'), 'info');
     }
 
 }

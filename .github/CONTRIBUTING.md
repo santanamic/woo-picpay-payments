@@ -1,6 +1,6 @@
 ### Create Bug Reports
 
-If you find a bug or suggest enhancement, let us know by [opening a new issue](https://github.com/santanamic/woocommerce-picpay-payments/issues/new).
+If you find a bug or suggest enhancement, let us know by [opening a new issue](https://github.com/santanamic/woo-picpay-payments/issues/new).
 
 ### Write and submit a patch
 

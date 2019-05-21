@@ -6,7 +6,7 @@ namespace PicPayGateway;
  *
  * WC_Gateway Class
  *
- * This file is part of <santanamic/woocommerce-picpay-payments>
+ * This file is part of <santanamic/woo-picpay-payments>
  * Created by WILLIAN SANTANA <https://github.com/santanamic>
  *
  * For the information of copyright and license you should read the file
@@ -18,7 +18,7 @@ namespace PicPayGateway;
  * Para obtener la información de los derechos de autor y la licencia debe leer
  * el archivo LICENSE que se distribuye con el código fuente.
  *
- * @package woocommerce-picpay-payments
+ * @package woo-picpay-payments
  * @author @santanamic
  *
  */
@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  *
  * @category Class
  * @version  1.0.0
- * @package  woocommerce-picpay-payments
+ * @package  woo-picpay-payments
  *
 */
 
@@ -55,11 +55,11 @@ class WC_Gateway extends \WC_Payment_Gateway
           *
           */  
 
-          $this->id = 'woocommerce-picpay-payments';
+          $this->id = 'woo-picpay-payments';
           $this->icon = WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL . 'public/assets/img/icon.svg';
           $this->has_fields = false;
-          $this->method_title = __('PicPay Pagamentos', 'woocommerce-picpay-payments');
-          $this->method_description =  __( 'Para utilizar este meio de pagamento você precisa das credenciais de acesso fornceias pelo PicPay. <br> <a href="https://lojista.picpay.com/dashboard/ecommerce-token">Crie ou entre na sua conta PicPay para conseguirás!</a>', 'woocommerce-picpay-payments' );
+          $this->method_title = __('PicPay Pagamentos', 'woo-picpay-payments');
+          $this->method_description =  __( 'Para utilizar este meio de pagamento você precisa das credenciais de acesso fornceias pelo PicPay. <br> <a href="https://lojista.picpay.com/dashboard/ecommerce-token">Crie ou entre na sua conta PicPay para conseguirás!</a>', 'woo-picpay-payments' );
           
           $this->init_form_fields();
 
@@ -125,25 +125,25 @@ class WC_Gateway extends \WC_Payment_Gateway
           
           $this->form_fields = array(
               'enabled' => array(
-                  'title'       => __( 'Ativar/Desativar', 'woocommerce-picpay-payments' ),
-                  'label'       => __( 'Marque para ativar essa forma de pagamento', 'woocommerce-picpay-payments' ),
+                  'title'       => __( 'Ativar/Desativar', 'woo-picpay-payments' ),
+                  'label'       => __( 'Marque para ativar essa forma de pagamento', 'woo-picpay-payments' ),
                   'type'        => 'checkbox',
                   'description' => '',
                   'default'     => 'no'
               ),
               'title' => array(
-                  'title'       => __( 'Title', 'woocommerce-picpay-payments' ),
+                  'title'       => __( 'Title', 'woo-picpay-payments' ),
                   'type'        => 'text',
-                  'description' => __( 'Isso controla o título que o usuário vê durante o checkout.', 'woocommerce-picpay-payments' ),
+                  'description' => __( 'Isso controla o título que o usuário vê durante o checkout.', 'woo-picpay-payments' ),
                   'default'     => 'PicPay',
                   'desc_tip'    => true,
               ),
               'description' => array(
-                  'title'       => __( 'Descrição.', 'woocommerce-picpay-payments' ),
+                  'title'       => __( 'Descrição.', 'woo-picpay-payments' ),
                   'type'        => 'textarea',
-                  'description' => __( 'Isso controla a descrição que o usuário vê durante o checkout.', 'woocommerce-picpay-payments' ),
+                  'description' => __( 'Isso controla a descrição que o usuário vê durante o checkout.', 'woo-picpay-payments' ),
                   'desc_tip'    => true,
-                  'default'     => __( 'Pague com seu smartphone através do PicPay.', 'woocommerce-picpay-payments' ), 
+                  'default'     => __( 'Pague com seu smartphone através do PicPay.', 'woo-picpay-payments' ), 
               ),
               'x-picpay-token' => array(
                   'title'       => 'x-picpay-token',
@@ -154,11 +154,11 @@ class WC_Gateway extends \WC_Payment_Gateway
                   'type'        => 'text'
               ),
 			  'debug'                => array(
-				  'title'       => __('Habilitar Log', 'woocommerce-picpay-payments'),
+				  'title'       => __('Habilitar Log', 'woo-picpay-payments'),
 				  'type'        => 'checkbox',
-				  'label'       => __('Habilitar Log', 'woocommerce-picpay-payments'),
+				  'label'       => __('Habilitar Log', 'woo-picpay-payments'),
 				  'default'     => 'no',
-				  'description' => sprintf(__('Registra os eventos do Gateway, como notificações de pagamento, através do arquivo <code>%s</code>. Observação: isto pode gravar informações pessoais. Nós recomendamos usar isso para apenas para fins de depuração e que delete estes registros após finalizar.', 'woocommerce-picpay-payments'), \WC_Log_Handler_File::get_log_file_path( $this->id )),
+				  'description' => sprintf(__('Registra os eventos do Gateway, como notificações de pagamento, através do arquivo <code>%s</code>. Observação: isto pode gravar informações pessoais. Nós recomendamos usar isso para apenas para fins de depuração e que delete estes registros após finalizar.', 'woo-picpay-payments'), \WC_Log_Handler_File::get_log_file_path( $this->id )),
 			  ),
           );
       }
@@ -182,7 +182,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 		*/
 
 		$this->log
-			->add( sprintf(__('Log do processo de pagamento para o ID do pedido: %s', 'woocommerce-picpay-payments'), $order_id) );
+			->add( sprintf(__('Log do processo de pagamento para o ID do pedido: %s', 'woo-picpay-payments'), $order_id) );
   
 		/**
 		 *
@@ -215,7 +215,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 			*/
 
 			$this->log
-				->add( sprintf(__('URL de pagamento recuperado: %s', 'woocommerce-picpay-payments'), $url) );
+				->add( sprintf(__('URL de pagamento recuperado: %s', 'woo-picpay-payments'), $url) );
 			
 		   /**
 			*
@@ -305,7 +305,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 						*
 						*/ 
 					  
-						$order->add_order_note(__( 'O comprador iniciou a transação, mas até agora o PicPay não recebeu nenhuma informação de pagamento.', 'woocommerce-picpay-payments' ));
+						$order->add_order_note(__( 'O comprador iniciou a transação, mas até agora o PicPay não recebeu nenhuma informação de pagamento.', 'woo-picpay-payments' ));
 						
 					   /**
 						*
@@ -338,7 +338,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 						*
 						*/ 
 					   
-						wc_add_notice(  __( 'Erro em obter a URL de pagamento do PicPay. Tente novamente!', 'woocommerce-picpay-payments' ), 'error' );
+						wc_add_notice(  __( 'Erro em obter a URL de pagamento do PicPay. Tente novamente!', 'woo-picpay-payments' ), 'error' );
 						
 					   /**
 						*
@@ -347,7 +347,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 						*/
 
 						$this->log
-							->add( sprintf(__('Erro de validação do URL do gateway: %s', 'woocommerce-picpay-payments'), $url) );
+							->add( sprintf(__('Erro de validação do URL do gateway: %s', 'woo-picpay-payments'), $url) );
 
 					   /**
 						*
@@ -373,7 +373,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 				*
 				*/ 
 				
-				wc_add_notice(  __( 'Parece que o PicPay está fora do ar. Escolha outra forma de pagamento ou tente novamente!', 'woocommerce-picpay-payments' ), 'error' );
+				wc_add_notice(  __( 'Parece que o PicPay está fora do ar. Escolha outra forma de pagamento ou tente novamente!', 'woo-picpay-payments' ), 'error' );
 				
 			   /**
 				*
@@ -453,7 +453,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 				*/
 
 				$this->log
-					->add( sprintf(__('PicPay Gateway recebeu uma notificação de URL: %s', 'woocommerce-picpay-payments'), var_export($payment, true)) );
+					->add( sprintf(__('PicPay Gateway recebeu uma notificação de URL: %s', 'woo-picpay-payments'), var_export($payment, true)) );
 
 			   /**
 				*
@@ -535,7 +535,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 					*/
 
 					$this->log
-						->add( sprintf(__('PicPay Gateway recebeu uma notificação de URL, mas o corpo da mensagem é invalido : %s', 'woocommerce-picpay-payments'), var_export($payment, true)) );
+						->add( sprintf(__('PicPay Gateway recebeu uma notificação de URL, mas o corpo da mensagem é invalido : %s', 'woo-picpay-payments'), var_export($payment, true)) );
 				}
 			}
 		}
@@ -560,7 +560,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 		 */
 
 		$this->log
-			->add( sprintf(__('Obtendo o status da ordem: %s', 'woocommerce-picpay-payments'), $order_id) );
+			->add( sprintf(__('Obtendo o status da ordem: %s', 'woo-picpay-payments'), $order_id) );
 
         /**
 		 *
@@ -671,7 +671,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 			 */
 			 
 			case 'expired':
-				$order->update_status( 'cancelled', __('PicPay: Pagamento expirado.', 'woocommerce-picpay-payments' ));
+				$order->update_status( 'cancelled', __('PicPay: Pagamento expirado.', 'woo-picpay-payments' ));
 				break;
 				
 			/**
@@ -681,7 +681,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 			 */
 			 
 			case 'analysis':
-				$order->update_status( 'on-hold', __('PicPay: Pagamento sob revisão.', 'woocommerce-picpay-payments' ));
+				$order->update_status( 'on-hold', __('PicPay: Pagamento sob revisão.', 'woo-picpay-payments' ));
 				wc_reduce_stock_levels( $payment['referenceId'] );
 				break;
 				
@@ -694,7 +694,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 			 
 			case 'paid':
 				if($order->get_status() == 'created') wc_reduce_stock_levels( $payment['referenceId'] );
-				$order->update_status('processing', __( 'PicPay: Pagamento aprovado.', 'woocommerce-picpay-payments' ));
+				$order->update_status('processing', __( 'PicPay: Pagamento aprovado.', 'woo-picpay-payments' ));
 				break;
 				
 			/**
@@ -704,7 +704,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 			 */
 			 
 			case 'completed':
-				$order->add_order_note(__( 'PicPay: Pagamento concluído e creditado em sua conta.', 'woocommerce-picpay-payments' ));
+				$order->add_order_note(__( 'PicPay: Pagamento concluído e creditado em sua conta.', 'woo-picpay-payments' ));
 				break;
 				
 			/**
@@ -717,9 +717,9 @@ class WC_Gateway extends \WC_Payment_Gateway
 			 
 			case 'refunded':
 				if($order->get_status() != 'refunded') {
-					$order->update_status('refunded', __( 'PicPay: Pagamento reembolsado.', 'woocommerce-picpay-payments' ));
+					$order->update_status('refunded', __( 'PicPay: Pagamento reembolsado.', 'woo-picpay-payments' ));
 					wc_increase_stock_levels( $payment['referenceId'] );
-					$order->add_order_note(__( 'PicPay: Pagamento reembolsado.', 'woocommerce-picpay-payments' ));
+					$order->add_order_note(__( 'PicPay: Pagamento reembolsado.', 'woo-picpay-payments' ));
 				}
 			
 			/**
@@ -729,7 +729,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 			 */
 
 			 case 'chargeback':
-				$order->update_status( 'refunded', __('PicPay: Pagamento chargeback.', 'woocommerce-picpay-payments' ));		
+				$order->update_status( 'refunded', __('PicPay: Pagamento chargeback.', 'woo-picpay-payments' ));		
 				break;
 				
 			/**
@@ -749,7 +749,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 		 */
 
 		$this->log
-			->add( sprintf(__('Alteração de status da order: %s', 'woocommerce-picpay-payments'), var_export($payment, true)) );
+			->add( sprintf(__('Alteração de status da order: %s', 'woo-picpay-payments'), var_export($payment, true)) );
 	}
 	
     /**
@@ -771,7 +771,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 		 */
 
 		$this->log
-			->add( sprintf(__('Processo para cancelamento da order: %s', 'woocommerce-picpay-payments'), $order_id) );
+			->add( sprintf(__('Processo para cancelamento da order: %s', 'woo-picpay-payments'), $order_id) );
 		
 		/**
 		 *
@@ -872,7 +872,7 @@ class WC_Gateway extends \WC_Payment_Gateway
 			 */
 
 			$this->log
-				->add( sprintf(__('API não processada. A solicitação foi feita para um status de pedido não necessário ou com dados inválidos: %s', 'woocommerce-picpay-payments'), $order_id) );
+				->add( sprintf(__('API não processada. A solicitação foi feita para um status de pedido não necessário ou com dados inválidos: %s', 'woo-picpay-payments'), $order_id) );
 		}
 	}
 

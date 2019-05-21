@@ -45,7 +45,7 @@ O método de instalação manual envolve o download do nosso plugin e o seu uplo
 Atualmente o PicPay recebe pagamento somente e exclusivamente do Brasil.
 
 = Onde posso encontrar documentação? =
-Para obter ajuda na configuração, consulte nosso [guia do usuário] (https://santanamic.github.io/woocommerce-picpay-payments/)
+Para obter ajuda na configuração, consulte nosso [guia do usuário] (https://santanamic.github.io/woo-picpay-payments/)
 
 = Onde posso obter suporte ou conversar com outros usuários? =
 Se você tiver problemas, pode pedir ajuda no fórum de plugins.
