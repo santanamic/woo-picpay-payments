@@ -6,7 +6,7 @@ namespace PicPayGateway;
  *
  * WC_Helper Class
  *
- * This file is part of <santanamic/woocommerce-picpay-payments>
+ * This file is part of <santanamic/woo-picpay-payments>
  * Created by WILLIAN SANTANA <https://github.com/santanamic>
  *
  * For the information of copyright and license you should read the file
@@ -18,7 +18,7 @@ namespace PicPayGateway;
  * Para obtener la información de los derechos de autor y la licencia debe leer
  * el archivo LICENSE que se distribuye con el código fuente.
  *
- * @package woocommerce-picpay-payments
+ * @package woo-picpay-payments
  * @author @santanamic
  *
  */
@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  *
  * @category Class
  * @version  1.0.0
- * @package  woocommerce-picpay-payments
+ * @package  woo-picpay-payments
  *
 */
 
@@ -56,7 +56,7 @@ class WC_Helper
          *
          */ 
         
-        $links[] = '<a href="' . esc_url(admin_url('admin.php?page=wc-settings&tab=checkout&section=woocommerce-picpay-payments')) . '">' . __('Configurações', 'woocommerce-picpay-payments') . '</a>';
+        $links[] = '<a href="' . esc_url(admin_url('admin.php?page=wc-settings&tab=checkout&section=woo-picpay-payments')) . '">' . __('Configurações', 'woo-picpay-payments') . '</a>';
         
         /**
          *
@@ -64,7 +64,7 @@ class WC_Helper
          *
          */ 
         
-        $links[] = '<a href="http://bit.ly/picpay-support-gateway">' . __('Suporte', 'woocommerce-picpay-payments') . '</a>';
+        $links[] = '<a href="http://bit.ly/picpay-support-gateway">' . __('Suporte', 'woo-picpay-payments') . '</a>';
 
         /**
          *
@@ -72,7 +72,7 @@ class WC_Helper
          *
          */ 
         
-        $links[] = '<a href="http://bit.ly/picpay-gateway-docs">' . __('Documentação', 'woocommerce-picpay-payments') . '</a>';
+        $links[] = '<a href="http://bit.ly/picpay-gateway-docs">' . __('Documentação', 'woo-picpay-payments') . '</a>';
         
         /**
          *
@@ -100,7 +100,7 @@ class WC_Helper
          *
          */ 
         
-        wp_enqueue_style('woocommerce-picpay-payments-admin-style', WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL . 'admin/assets/css/style.css');
+        wp_enqueue_style('woo-picpay-payments-admin-style', WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL . 'admin/assets/css/style.css');
         
         /**
          *
@@ -108,7 +108,7 @@ class WC_Helper
          *
          */ 
         
-        wp_enqueue_style('woocommerce-picpay-payments-admin-style-fancybox',  WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL . 'admin/assets/css/jquery.fancybox.min.css');
+        wp_enqueue_style('woo-picpay-payments-admin-style-fancybox',  WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL . 'admin/assets/css/jquery.fancybox.min.css');
         
         /**
          *
@@ -116,7 +116,7 @@ class WC_Helper
          *
          */ 
         
-        wp_enqueue_script('woocommerce-picpay-payments-admin-script-fancybox', WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL . 'admin/assets/js/jquery.fancybox.min.js');
+        wp_enqueue_script('woo-picpay-payments-admin-script-fancybox', WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL . 'admin/assets/js/jquery.fancybox.min.js');
         
 
         /**
@@ -125,7 +125,7 @@ class WC_Helper
          *
          */ 
         
-        wp_enqueue_script('woocommerce-picpay-payments-admin-script', WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL . 'admin/assets/js/script.js');
+        wp_enqueue_script('woo-picpay-payments-admin-script', WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL . 'admin/assets/js/script.js');
     }
 
     /**
@@ -146,7 +146,7 @@ class WC_Helper
          *
          */ 
         
-        $data = get_option('woocommerce_woocommerce-picpay-payments_settings');
+        $data = get_option('woocommerce_woo-picpay-payments_settings');
         
         /**
          *

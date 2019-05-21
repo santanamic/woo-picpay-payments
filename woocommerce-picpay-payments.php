@@ -3,7 +3,7 @@
 /**
  *
  * Plugin Name: Woocommerce PicPay Pagamentos
- * Plugin URI: https://github.com/santanamic/woocommerce-picpay-payments
+ * Plugin URI: https://github.com/santanamic/woo-picpay-payments
  * Description: Receba Pagamentos com PicPay no WooCommerce
  * Author: WILLIAN SANTANA
  * Author URI: https://github.com/santanamic
@@ -13,9 +13,9 @@
  * WC requires at least: 3.0
  * WC tested up to: 3.5
  * Domain Path: /languages
- * Text Domain: woocommerce-picpay-payments
+ * Text Domain: woo-picpay-payments
  *
- * This file is part of <santanamic/woocommerce-picpay-payments>
+ * This file is part of <santanamic/woo-picpay-payments>
  * Created by WILLIAN SANTANA <https://github.com/santanamic>
  *
  * For the information of copyright and license you should read the file
@@ -27,7 +27,7 @@
  * Para obtener la información de los derechos de autor y la licencia debe leer
  * el archivo LICENSE que se distribuye con el código fuente.
  *
- * @package woocommerce-picpay-payments
+ * @package woo-picpay-payments
  * @author @santanamic
  *
  */
@@ -38,7 +38,7 @@ define('WOOCOMMERCE_PICPAY_PAYMENTS_VERSION', '1.2.0');
 define('WOOCOMMERCE_PICPAY_PAYMENTS_DIR_PATH', plugin_dir_path(__FILE__));
 define('WOOCOMMERCE_PICPAY_PAYMENTS_DIR_URL', plugin_dir_url(__FILE__));
 define('WOOCOMMERCE_PICPAY_PAYMENTS_BASENAME', plugin_basename(__FILE__));
-define('WOOCOMMERCE_PICPAY_PAYMENTS_SLUG', 'woocommerce-picpay-payments');
+define('WOOCOMMERCE_PICPAY_PAYMENTS_SLUG', 'woo-picpay-payments');
 
 require_once( WOOCOMMERCE_PICPAY_PAYMENTS_DIR_PATH . 'vendor/autoload.php' );
 

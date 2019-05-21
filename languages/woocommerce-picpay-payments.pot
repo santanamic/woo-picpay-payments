@@ -62,7 +62,7 @@ msgid "https://github.com/santanamic"
 msgstr ""
 
 #. URI of the plugin
-msgid "https://github.com/santanamic/woocommerce-picpay-payments"
+msgid "https://github.com/santanamic/woo-picpay-payments"
 msgstr ""
 
 #: includes/class-wc-picpay-payments-gateway.php:144
@@ -92,7 +92,7 @@ msgstr ""
 msgid ""
 "Obrigado por baixar o plugin <strong>PicPay Pagamentos</strong> para ativá-"
 "lo acesse o menu de <a href=\"admin.php?page=wc-"
-"settings&tab=checkout&section=woocommerce-picpay-payments\">opções</a>."
+"settings&tab=checkout&section=woo-picpay-payments\">opções</a>."
 msgstr ""
 
 #: includes/class-wc-picpay-payments-gateway.php:563
@@ -132,7 +132,7 @@ msgstr ""
 msgid ""
 "Para receber pagamentos com o <strong>PicPay</strong> certifiquese de "
 "inserir as credenciais de acesso no menu de <a href=\"admin.php?page=wc-"
-"settings&tab=checkout&section=woocommerce-picpay-payments\">opções.</a>"
+"settings&tab=checkout&section=woo-picpay-payments\">opções.</a>"
 msgstr ""
 
 #: includes/class-wc-picpay-payments-notices_builder.php:140

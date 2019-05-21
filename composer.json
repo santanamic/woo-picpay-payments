@@ -1,5 +1,5 @@
 {
-    "name": "santanamic/woocommerce-gateway-payments",
+    "name": "santanamic/woo-picpay-payments",
     "version": "1.2.0",
     "type": "wordpress-plugin",
     "description": "Receba Pagamentos com PicPay no WooCommerce",
@@ -9,7 +9,7 @@
         "WooCommerce",
         "Payments"
     ],
-    "homepage": "https://github.com/santanamic/woocommerce-picpay-payments",
+    "homepage": "https://github.com/santanamic/woo-picpay-payments",
     "license": "MIT",
     "authors": [
         {

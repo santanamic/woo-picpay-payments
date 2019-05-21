@@ -6,7 +6,7 @@ namespace PicPayGateway;
  *
  * WC_Log Class
  *
- * This file is part of <santanamic/woocommerce-picpay-payments>
+ * This file is part of <santanamic/woo-picpay-payments>
  * Created by WILLIAN SANTANA <https://github.com/santanamic>
  *
  * For the information of copyright and license you should read the file
@@ -18,7 +18,7 @@ namespace PicPayGateway;
  * Para obtener la información de los derechos de autor y la licencia debe leer
  * el archivo LICENSE que se distribuye con el código fuente.
  *
- * @package woocommerce-picpay-payments
+ * @package woo-picpay-payments
  * @author @santanamic
  *
  */
@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
  *
  * @category Class
  * @version  1.0.0
- * @package  woocommerce-picpay-payments
+ * @package  woo-picpay-payments
  *
 */
 
